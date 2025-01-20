@@ -1,5 +1,4 @@
 import React from 'react';
-import { Github, Mail, Linkedin } from 'lucide-react';
 import { SocialLink } from '@/types';
 
 interface SocialIconProps {
@@ -9,11 +8,9 @@ interface SocialIconProps {
 const SocialIcon: React.FC<SocialIconProps> = ({ platform }) => {
     switch (platform) {
         case 'github':
-            return <Github className="w-6 h-6" />;
-        case 'email':
-            return <Mail className="w-6 h-6" />;
-        case 'linkedin':
-            return <Linkedin className="w-6 h-6" />;
+            return <img src="/icons/github-mark.svg" className="w-6 h-6" alt="GitHub" />;
+        case "zenn":
+            return <img src="/icons/zenn-logo-only.svg" className="w-6 h-6" alt="Zenn" />;
     }
 };
 

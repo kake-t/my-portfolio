@@ -5,8 +5,7 @@ export const profileData: ProfileData = {
     title: "Frontend Developer",
     profileImage: "/api/placeholder/150/150",
     socialLinks: [
-        { platform: "github", url: "https://github.com/yourusername" },
-        { platform: "email", url: "mailto:your.email@example.com" },
-        { platform: "linkedin", url: "https://linkedin.com/in/yourusername" },
+        { platform: "github", url: "https://github.com/kake-t" },
+        { platform: "zenn", url: "https://zenn.dev/kake99" },
     ],
 };

@@ -13,7 +13,7 @@ export interface Project {
 }
 
 export interface SocialLink {
-    platform: "github" | "email" | "linkedin";
+    platform: "github" | "zenn";
     url: string;
 }
 
