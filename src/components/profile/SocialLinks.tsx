@@ -1,5 +1,7 @@
 import React from 'react';
 import { SocialLink } from '@/types';
+import nextConfig from "../../../next.config.mjs";
+const BASE_PATH = nextConfig.basePath || "";
 
 interface SocialIconProps {
     platform: SocialLink['platform'];
@@ -8,9 +10,9 @@ interface SocialIconProps {
 const SocialIcon: React.FC<SocialIconProps> = ({ platform }) => {
     switch (platform) {
         case 'github':
-            return <img src="/icons/github-mark.svg" className="w-6 h-6" alt="GitHub" />;
+            return <img src={`${BASE_PATH}/icons/github-mark.svg`} className="w-6 h-6" alt="GitHub" />;
         case "zenn":
-            return <img src="/icons/zenn-logo-only.svg" className="w-6 h-6" alt="Zenn" />;
+            return <img src={`${BASE_PATH}/icons/zenn-logo-only.svg`} className="w-6 h-6" alt="Zenn" />;
     }
 };
 
