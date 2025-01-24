@@ -4,11 +4,18 @@ import { Project } from '@/types';
 const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
     <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow flex flex-col md:flex-row">
         <div className="w-full md:w-1/2 p-4 flex items-center justify-center">
-            <img
-                src={project.imageUrl}
-                alt={project.title}
-                className="max-w-full max-h-48 object-contain"
-            />
+            <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer hover:opacity-80 transition-opacity"
+            >
+                <img
+                    src={project.imageUrl}
+                    alt={project.title}
+                    className="max-w-full max-h-48 object-contain"
+                />
+            </a>
         </div>
         <div className="w-full md:w-1/2 p-6">
             <h3 className="text-xl font-semibold text-gray-800 mb-2">{project.title}</h3>

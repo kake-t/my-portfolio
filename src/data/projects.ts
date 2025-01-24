@@ -8,5 +8,6 @@ export const projectsData: Project[] = [
         imageUrl:
             "https://gh-card.dev/repos/kake-t/ai-information-collection-app.svg",
         technologies: ["Python", "AWS", "perplexity"],
+        link: "https://github.com/kake-t/ai-information-collection-app",
     },
 ];
