@@ -1,8 +1,9 @@
 export interface WorkExperience {
-    companyName: string;
+    projectName: string;
     position: string;
     period: string;
     description: string;
+    technologies: string[];
 }
 
 export interface Project {
