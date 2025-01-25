@@ -15,4 +15,16 @@ export const profileData: ProfileData = {
         { platform: "zenn", url: "https://zenn.dev/kake99" },
     ],
     bio: bioText,
+    certifications: [
+        {
+            name: "Oracle Certified Java Programmer, Silver SE 8",
+            acquiredDate: "2019年7月",
+            organization: "Oracle",
+        },
+        {
+            name: "基本情報技術者試験",
+            acquiredDate: "2024年10月",
+            organization: "IPA",
+        },
+    ],
 };

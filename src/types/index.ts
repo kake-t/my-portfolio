@@ -18,10 +18,17 @@ export interface SocialLink {
     url: string;
 }
 
+export interface Certification {
+    name: string;
+    acquiredDate: string;
+    organization: string;
+}
+
 export interface ProfileData {
     name: string;
     title: string;
     profileImage: string;
     socialLinks: SocialLink[];
     bio: string;
+    certifications: Certification[];
 }

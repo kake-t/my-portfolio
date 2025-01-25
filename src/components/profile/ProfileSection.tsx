@@ -1,6 +1,7 @@
 import React from 'react';
 import { profileData } from '@/data/profile';
 import SocialLinks from './SocialLinks';
+import CertificationList from './CertificationList';
 
 const ProfileSection: React.FC = () => (
     <section id="profile" className="py-20">
@@ -18,6 +19,7 @@ const ProfileSection: React.FC = () => (
             <div className="max-w-2xl mx-auto mt-8">
                 <p className="text-gray-700 whitespace-pre-line">{profileData.bio}</p>
             </div>
+            <CertificationList certifications={profileData.certifications} />
         </div>
     </section>
 );
