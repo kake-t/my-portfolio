@@ -7,21 +7,22 @@ export const careerData: WorkExperience[] = [
         description:
             "既存システム(AWS EC2)からAWSサーバレスアーキテクチャへの移行対応",
         tasks: [
-            "AWS Lambda、API Gateway、DynamoDBを用いたサーバレスアーキテクチャの設計",
-            "Python FastAPIからAWS Lambdaへの移行作業",
-            "テスト計画の立案と実施",
+            "AWSサーバレスアーキテクチャの機能調査",
+            "AWS LambdaとDockerを活用した開発フローの構築",
+            "AWS Lambdaを用いた機能の設計・実装・テスト",
         ],
         technologies: ["Python", "AWS", "Docker"],
     },
     {
         projectName: "テレメトリデータ収集システム",
         period: "2024年10月 - 2024年11月",
-        description: "InfluxDBからVictoriaMetricsへの移行対応",
+        description:
+            "メトリクスデータ保存用DBを、InfluxDBからVictoriaMetricsへの移行対応",
         tasks: [
-            "VictoriaMetricsクラスタの構築",
-            "データ移行スクリプトの作成",
-            "Grafanaダッシュボードの移行対応",
+            "InfluxDBからVictoriaMetricsに変更可能か調査",
+            "メトリクスデータ収集システム(Go)のVictriaMetrics対応",
+            "GrafanaダッシュボードのVictriaMetrics移行対応",
         ],
-        technologies: ["Go", "VictoriaMetrics", "Docker"],
+        technologies: ["Go", "VictoriaMetrics", "Grafana", "Docker"],
     },
 ];
