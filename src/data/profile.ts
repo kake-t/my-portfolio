@@ -30,8 +30,6 @@ export const profileData: ProfileData = {
     skills: [
         { name: "Python", years: 3 },
         { name: "Swift", years: 2 },
-        { name: "JavaScript", years: 4 },
-        { name: "TypeScript", years: 2 },
-        { name: "React", years: 3 },
+        { name: "JavaScript", years: 1 },
     ],
 };
