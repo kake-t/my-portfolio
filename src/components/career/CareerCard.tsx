@@ -10,6 +10,16 @@ const CareerCard: React.FC<{ experience: WorkExperience }> = ({ experience }) =>
             <span className="text-gray-500">{experience.period}</span>
         </div>
         <p className="mt-4 text-gray-600">{experience.description}</p>
+
+        <div className="mt-4">
+            <h4 className="text-md font-semibold text-gray-700 mb-2">担当業務</h4>
+            <ul className="list-disc list-inside space-y-1 text-gray-600">
+                {experience.tasks.map((task, index) => (
+                    <li key={index}>{task}</li>
+                ))}
+            </ul>
+        </div>
+
         <div className="flex flex-wrap gap-2 mt-4">
             {experience.technologies.map((tech, index) => (
                 <span

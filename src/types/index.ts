@@ -2,6 +2,7 @@ export interface WorkExperience {
     projectName: string;
     period: string;
     description: string;
+    tasks: string[];
     technologies: string[];
 }
 
