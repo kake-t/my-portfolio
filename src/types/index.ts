@@ -24,6 +24,11 @@ export interface Certification {
     organization: string;
 }
 
+export interface Skill {
+    name: string;
+    years: number;
+}
+
 export interface ProfileData {
     name: string;
     title: string;
@@ -31,4 +36,5 @@ export interface ProfileData {
     socialLinks: SocialLink[];
     bio: string;
     certifications: Certification[];
+    skills: Skill[];
 }
