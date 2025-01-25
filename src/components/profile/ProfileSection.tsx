@@ -18,7 +18,9 @@ const ProfileSection: React.FC = () => (
             </div>
             <div className="max-w-2xl mx-auto mt-8">
                 <h3 className="text-2xl font-semibold text-gray-800 mb-6 text-center">PR</h3>
-                <p className="text-gray-700 whitespace-pre-line">{profileData.bio}</p>
+                <div className="bg-white p-6 rounded-lg shadow-sm">
+                    <p className="text-gray-700 whitespace-pre-line">{profileData.bio}</p>
+                </div>
             </div>
             <CertificationList certifications={profileData.certifications} />
         </div>
