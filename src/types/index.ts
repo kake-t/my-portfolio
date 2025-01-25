@@ -1,6 +1,5 @@
 export interface WorkExperience {
     projectName: string;
-    position: string;
     period: string;
     description: string;
     technologies: string[];
