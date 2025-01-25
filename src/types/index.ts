@@ -23,4 +23,5 @@ export interface ProfileData {
     title: string;
     profileImage: string;
     socialLinks: SocialLink[];
+    bio: string;
 }
