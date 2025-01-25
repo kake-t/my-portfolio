@@ -1,8 +1,9 @@
 export interface WorkExperience {
-    companyName: string;
-    position: string;
+    projectName: string;
     period: string;
     description: string;
+    tasks: string[];
+    technologies: string[];
 }
 
 export interface Project {
@@ -10,6 +11,7 @@ export interface Project {
     description: string;
     imageUrl: string;
     technologies: string[];
+    link: string;
 }
 
 export interface SocialLink {
@@ -17,9 +19,23 @@ export interface SocialLink {
     url: string;
 }
 
+export interface Certification {
+    name: string;
+    acquiredDate: string;
+    organization: string;
+}
+
+export interface Skill {
+    name: string;
+    years: number;
+}
+
 export interface ProfileData {
     name: string;
     title: string;
     profileImage: string;
     socialLinks: SocialLink[];
+    bio: string;
+    certifications: Certification[];
+    skills: Skill[];
 }
