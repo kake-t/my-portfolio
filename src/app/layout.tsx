@@ -1,6 +1,7 @@
-import React from 'react';
-import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import Header from '@/components/layout/Header';
+import Script from 'next/script';
+import type React from 'react';
 import '@/styles/tailwind.css';
 
 export default function RootLayout({
@@ -10,24 +11,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <head>
-        {/* Google tag (gtag.js) */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-CMHFH6H6F6"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-CMHFH6H6F6');
-            `,
-          }}
-        />
-      </head>
+      <head />
       <body className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+        {/* Google tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-CMHFH6H6F6"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-CMHFH6H6F6');
+          `}
+        </Script>
         <Header />
         {children}
         <Footer />
