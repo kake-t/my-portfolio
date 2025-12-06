@@ -31,5 +31,6 @@ export const profileData: ProfileData = {
         { name: "Python", years: 3 },
         { name: "Swift", years: 2 },
         { name: "JavaScript", years: 1 },
+        { name: "Java", years: 1 },
     ],
 };
